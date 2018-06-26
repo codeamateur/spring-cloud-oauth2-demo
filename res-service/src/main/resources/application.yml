@@ -1,0 +1,29 @@
+spring:
+  application:
+    name: resource-service
+
+server:
+  port: 9080
+security:
+  oauth2:
+    authorization:
+      check-token-access: http://localhost:8080/oauth/check_token
+    resource:
+      prefer-token-info: false
+      user-info-uri: http://localhost:8080/user
+    client:
+      clientId: resource-service
+      clientSecret: test
+      accessTokenUri: http://localhost:8080/oauth/token
+      grant-type: client_credentials
+      scope: server
+
+
+
+
+
+
+
+
+
+

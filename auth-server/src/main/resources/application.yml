@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: auth-server
+  jpa:
+    show-sql: true
+    database: mysql
+    open-in-view: true
+    properties:
+      hibernate:
+        enable_lazy_load_no_trans : true
+  datasource:
+    url: jdbc:mysql://localhost:3306/microservice?useUnicode=true&characterEncoding=utf-8
+    username: root
+    password: root
+    driver-class-name: com.mysql.jdbc.Driver
+  redis:
+    host: 127.0.0.1
+    port: 6379
+server:
+  port: 8080
+
+
